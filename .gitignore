@@ -36,3 +36,4 @@ node_modules/
 plugins/
 hooks/
 package-lock.json
+platforms/
