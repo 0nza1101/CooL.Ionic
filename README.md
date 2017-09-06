@@ -1,7 +1,11 @@
 # CooL.Ionic
 
-| Ionic Framework Version | 3.9.2 |
-| Angular version | 4 |
+| Command | version |
+| --- | --- |
+| Ionic Framework | 3.9.2 |
+| Angular | 4 |
+| Node | 6.11.2 |
+| npm | 5.3.0 |
 
  This repository was made in order to get many directives and components style to work with to make life easier.
  You will find many many different components, pages, pipes, services, of which can be very useful to you. Note though that these are all experimental!
