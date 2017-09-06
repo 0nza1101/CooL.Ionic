@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Location select</ion-title>
+    <ion-buttons right>
+      <button [disabled]="saveDisabled" ion-button (click)="save()">Save</button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <!--SearchBar-->
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="query" (ionInput)="searchPlace()"></ion-searchbar>
+  </ion-toolbar>
+
+  <!--Place list-->
+  <ion-list>
+    <ion-item *ngFor="let place of places" (click)="selectPlace(place)" (touchstart)="selectPlace(place)">{{place.description}}</ion-item>
+  </ion-list>
+
+</ion-header>
+
+<ion-content>
+
+  <div #pleaseConnect id="please-connect">
+    <p>Please connect to the Internet...</p>
+  </div>
+
+  <div #map id="map">
+  </div>
+
+</ion-content>

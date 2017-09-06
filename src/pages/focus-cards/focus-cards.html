@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Focus card directive</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content focusCards>
+
+    <ion-card *ngFor="let test of testData">
+
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/marty-avatar.png">
+        </ion-avatar>
+        <h2>Marty McFly</h2>
+        <p>November 5, 1955</p>
+      </ion-item>
+
+      <ion-card-content>
+        <p>Chrome DevTools device mode is needed in order to get this directive working in web browser (touchstart)</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar *ngIf="!enableSel">
+    <button ion-button menuToggle>
+        <ion-icon class="fadein-down" name="menu"></ion-icon>
+    </button>
+    <ion-title>Selectable list</ion-title>
+  </ion-navbar>
+  <!--Selection top bar-->
+  <ion-toolbar *ngIf="enableSel">
+    <ion-buttons start-left>
+      <button ion-button icon-only (click)="closeSel()">
+         <ion-icon class="fadein-down" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>{{this.selectedItems.length}}</ion-title>
+
+
+    <ion-buttons end>
+      <button ion-button icon-only >
+         <ion-icon class="fadein-down" name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only >
+         <ion-icon class="fadein-down" name="paper-plane"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="rmItem()" >
+         <ion-icon class="fadein-down" name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines>
+    <ion-item *ngFor="let item of items;let i=index" (tap)="tapEvent($event, i)" (press)="pressEvent($event, i)">
+      <ion-checkbox class="fadein-down" *ngIf="enableSel" [(ngModel)]="items[i].checked"></ion-checkbox>
+      <h2 class="title">{{item.title}}</h2>
+      <h3 class="subtitle">{{item.subtitle}}</h3>
+      <p>{{item.description}}</p>
+      <ion-note item-end>{{item.time}}</ion-note>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

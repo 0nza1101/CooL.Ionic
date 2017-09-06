@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Emoji picker</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-textarea [(ngModel)]="emojitext"></ion-textarea>
+  <br>
+  <button ion-button icon-start (click)="toggled = !toggled" [(emojiPickerIf)]="toggled" [emojiPickerDirection]="'bottom'"
+        (emojiPickerSelect)="handleSelection($event)">
+        Open emoji picker
+  </button>
+</ion-content>

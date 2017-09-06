@@ -1,0 +1,8 @@
+{
+  "name": "CooL.Ionic",
+  "app_id": "13c43af6",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

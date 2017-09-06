@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CSS Basic Animations</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+  <p>
+    Some basic CSS animations on page enter. See src/theme/animations.scss.
+  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <button class="pop-in" ion-button color="primary">Pop-in</button>
+        <button class="pop-out" ion-button color="primary">Pop-out</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <button class="wave" ion-button color="primary">Wave</button>
+        <button class="slide-up" ion-button color="primary">Slide-up</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button class="drop-in" ion-button color="primary">Drop-in</button>
+        <button class="wobble" ion-button color="primary">Wobble</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <button class="fadein-down" ion-button color="primary">Fadein-down</button>
+        <button class="ta-da" ion-button color="primary">Ta-da</button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col col-12>
+        <button class="bounce" ion-button color="primary">Bounce</button>
+        <button class="shake" ion-button color="primary">Shake</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button class="swing" ion-button color="primary">Swing</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <br>
+      <br>
+      <ion-col col-12>
+        <button ion-button color="secondary" (click)="reloadAnim();">Reload animations</button><br>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

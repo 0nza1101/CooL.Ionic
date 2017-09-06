@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Overslide list directive</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines>
+    <ion-item-sliding (overslide)="handleOverslide(item)" *ngFor="let item of items" overslide>
+      <ion-item>
+        <h2 class="title">{{item.title}}</h2>
+        <h3 class="subtitle">{{item.subtitle}}</h3>
+        <p>{{item.description}}</p>
+        <ion-note item-end>{{item.time}}</ion-note>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button (click)="archiveClick(item)"><ion-icon name='archive' color="light"></ion-icon>Archive</button>
+
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
