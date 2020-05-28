@@ -14,7 +14,7 @@
  Feel free to contribute so we can have even more content.
 
  ## Demo
- If you just want to check this project out, you can see the online demo at https://coolionic.jordan-nijean.com or use [Ionic View](http://view.ionic.io/) with the code **13c43af6**.
+ If you just want to check this project out, you can see the online demo at https://coolionic.herokuapp.com/ or use [Ionic View](http://view.ionic.io/) with the code **13c43af6**.
 
  Please note that some directives, components are only working on real devices but you can still enable some of them by using **Chrome DevTools device mode**.
  _I will try to not make use of native plugins that only work on real device to keep it focused on directives, components and pipes in a first place._
